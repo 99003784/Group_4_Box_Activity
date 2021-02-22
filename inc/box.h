@@ -47,5 +47,6 @@ int enter_details(struct box *);
 
 struct box display(struct box *);
 
+int max_height(struct box *ptr);
 
 #endif //BOX__H

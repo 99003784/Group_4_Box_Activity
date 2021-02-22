@@ -28,3 +28,23 @@ struct box display(struct box *pb)
         }
     return *pb;
 }
+
+int max_height(struct box *ptr)
+{
+    if(SIZE<1)
+    {
+        return 0; 
+    }
+    else
+    {
+        int maxH=0,i;
+        for(i = 0; i < size_t; i++)
+            {
+                if(maxH < ptr[i].height)
+                {
+                    maxH = ptr[i].height;
+                    break;
+                }
+            }
+            return maxH;
+    }
