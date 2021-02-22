@@ -16,6 +16,13 @@ void test_enter_details(void)
     
 }
 
+void test_max_height(void)
+{
+      TEST_ASSERT_EQUAL(SUCCESS, max_height(&pb));
+    
+}
+
+
 void test_update_weight(void)
 {
       TEST_ASSERT_EQUAL(SUCCESS, update_weight(&pb));

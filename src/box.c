@@ -27,6 +27,13 @@ struct box display(struct box *pb)
     return *pb;
 }
 
+/**
+ * @brief To find the maximum height
+ * 
+ * @param pb num Integer to find height
+ * @return int Success or Failure
+ */
+
 int max_height(struct box *ptr)
 {
     if(SIZE<1)

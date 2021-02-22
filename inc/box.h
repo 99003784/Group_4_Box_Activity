@@ -50,7 +50,10 @@ int enter_details(struct box *);
  */
 
 struct box display(struct box *);
-
+/**
+ * @brief to find the maximum height
+ * 
+ */
 int max_height(struct box *ptr);
 
 int update_weight(struct box *);
