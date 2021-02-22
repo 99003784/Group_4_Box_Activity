@@ -9,12 +9,16 @@
  * 
  */
 
-#ifndef  BOX_H__
-#define  BOX_H__
+#ifndef  __BOX_H__
+#define  __BOX_H__
+
+
 #define SUCCESS 1
 #define ZERO 0
 #define SIZE 10
-
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 /**
  * @brief  structure of box 
  * 

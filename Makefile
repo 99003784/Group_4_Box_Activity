@@ -1,15 +1,28 @@
-PROJECT_NAME  = Box
-SRC = test_box.c\
-box_src.c\
+PROJECT_NAME = box
+
+
+SRC = text_box.c\
+src/box.c\
 unity/unity.c
 
-INC =./unity
+
+
+INC	= -Iinc\
+-Iunity\
+
 
 $(PROJECT_NAME).out: $(SRC)
 	gcc $^ -I $(INC) -o $@
 
+
+all: $(SRC) $(BUILD)
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+
 test: $(PROJECT_NAME).out
 	./$(PROJECT_NAME).out
+
+run:$(PROJECT_NAME)
+	./$(PROJECT_OUTPUT).out
 
 analysis:
 	cppcheck $(SRC)
@@ -27,3 +40,6 @@ codesize:${PROJECT_NAME}.out
 
 clean:
 		rm -rf *.out *.o documentation/html *.gcov *.gcda *.gcno
+
+(BUILD):
+	mkdir build

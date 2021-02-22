@@ -1,7 +1,5 @@
 #include "box.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <math.h>
+
 #define SIZE 10
 
 
@@ -38,7 +36,7 @@ int max_height(struct box *ptr)
     else
     {
         int maxH=0,i;
-        for(i = 0; i < size_t; i++)
+        for(i = 0; i < SIZE; i++)
             {
                 if(maxH < ptr[i].height)
                 {
@@ -46,5 +44,5 @@ int max_height(struct box *ptr)
                     break;
                 }
             }
-            return maxH;
+            return 1;
     }
