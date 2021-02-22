@@ -68,4 +68,12 @@ int update_weight(struct box *);
  */
 int remove_box(struct box *);
 
+
+
+int find_box_by_id(const  box* ,int ,int);
+/**
+ * @brief find the box by unique_id
+ * 
+ */
+
 #endif //BOX__H

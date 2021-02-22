@@ -110,3 +110,25 @@ int remove_box(struct box *pb)
     }
     
 }
+
+// to find the box by unique_id
+
+int find_box_by_id(const box* parr,int len,int u_id)
+{
+ const box *ptr=parr;
+	for(int i=0;i<len;i++)
+	{
+		if (ptr->unique_id==u_id)
+		{
+            printf("The box has been found\n");
+			return 1;
+		}
+        ptr++;
+     	
+	}
+    printf("The box with the given unique_id is not present\n");
+    return 0;
+
+    return NULL;
+}   
+
