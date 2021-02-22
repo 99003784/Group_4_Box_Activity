@@ -53,4 +53,16 @@ struct box display(struct box *);
 
 int max_height(struct box *ptr);
 
+int update_weight(struct box *);
+/**
+ * @brief Update weight of box with specific id
+ * 
+ */
+
+/**
+ * @brief Remove the box with given id
+ * 
+ */
+int remove_box(struct box *);
+
 #endif //BOX__H

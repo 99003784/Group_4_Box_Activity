@@ -16,6 +16,18 @@ void test_enter_details(void)
     
 }
 
+void test_update_weight(void)
+{
+      TEST_ASSERT_EQUAL(SUCCESS, update_weight(&pb));
+    
+}
+
+void test_remove_box(void)
+{
+      TEST_ASSERT_EQUAL(SUCCESS, remove_box(&pb));
+    
+}
+
 void test_max_height(void)
 {
     TEST_ASSERT_EQUAL(SUCCESS,max_height(&pb));
@@ -29,7 +41,9 @@ int main(void)
   
   RUN_TEST(test_enter_details);
   RUN_TEST(test_max_height);
-  /* Close the Unity Test Framework */
+  RUN_TEST(test_update_weight);
+  RUN_TEST(test_remove_box);
+ /* Close the Unity Test Framework */
   return UNITY_END();
   free(pb);
 }

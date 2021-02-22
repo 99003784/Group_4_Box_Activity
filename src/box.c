@@ -45,4 +45,61 @@ int max_height(struct box *ptr)
                 }
             }
             return 1;
+}
+/**
+ * @brief To update weight of box with specific id
+ * 
+ * @param pb num Integer and double to update weight
+ * @return int Success or Failure
+ */
+int update_weight(struct box *pb)
+{
+    int id,j,i;
+    double new;
+    printf("\n Enter ID to change the weight the box");
+    scanf("%d",&id);
+    for(i=0;i<s;i++)
+    {
+        if(pb->unique_id==id)
+        {
+            
+            
+            pb->weight = new;
+            printf("\n Unique ID = %d \t Lenght = %d \t Breadth = %d \t Height = %d \n colour = %s \t Weight = %lf",pb[i].unique_id,pb[i].length,pb[i].breadth,pb[i].height,pb[i].colour,pb->weight);
+             return 1;
+        }
+        else
+        {
+            printf("\n Box not found");
+            return 0;
+        }
     }
+}
+/**
+ * @brief Remove the box with given id
+ * 
+ * @param pb num Integer to remove the box
+ * @return int Success or Failure
+ */
+
+int remove_box(struct box *pb)
+{
+    int id,j,i;
+    double new;
+        for(i=0;i<s;i++)
+    {
+        if(pb->unique_id==id)
+        {
+            
+            pb->weight = new;
+            printf("\n Unique ID = %d \t Lenght = %d \t Breadth = %d \t Height = %d \n colour = %s \t Weight = %lf",pb[i].unique_id,pb[i].length,pb[i].breadth,pb[i].height,pb[i].colour,pb->weight);
+             return 1;
+        }
+        else
+        {
+            printf("\n Box not found");
+            return 0;
+        }
+    }
+    
+}
