@@ -40,6 +40,12 @@ void test_max_height(void)
 {
     TEST_ASSERT_EQUAL(SUCCESS,max_height(&pb));
 }
+
+void test_find_box_by_id(void)
+{
+      TEST_ASSERT_EQUAL(SUCCESS,find_box_by_id(&pb));
+}
+
 int main(void)
 {
 
@@ -51,6 +57,7 @@ int main(void)
   RUN_TEST(test_max_height);
   RUN_TEST(test_update_weight);
   RUN_TEST(test_remove_box);
+  RUN_TEST(test_find_box_by_id); 
  /* Close the Unity Test Framework */
   return UNITY_END();
   free(pb);
