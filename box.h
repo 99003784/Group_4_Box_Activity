@@ -1,6 +1,6 @@
 /**
  * @file box.h
- * @author Aruna(99003756) Karisma(99003760) Souvik(99003784) Sayani(99003772) Suvradeep(99003788)  (a.aruna@ltts.com.com) 
+ * @authors Aruna(99003756) Karisma(99003760) Souvik(99003784) Sayani(99003772) Suvradeep(99003788)  (a.aruna@ltts.com.com) 
  * @brief 
  * @version 0.1
  * @date 2021-02-22
@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <math.h>
 /**
- * @brief  structure of box 
+ * @brief  structure of box having parameters:unique ID,length,breadth,height,colour,weight
  * 
  */
 struct box{
@@ -32,21 +32,19 @@ struct box{
     double weight;
 };
 struct box* pb;
-
 /**
- * @brief adding a box at the end of array
+ * @brief takes the details of the box : unique ID,length,breadth,height,Colour,weight
  * 
+ * @return int 
  */
+
 
 int enter_details(struct box *);
-/**
- * @brief 
- * 
- */
 
 /**
- * @brief 
+ * @brief displays the details of the box
  * 
+ * @return pointer to first struct box 
  */
 
 struct box display(struct box *);
@@ -70,7 +68,7 @@ int remove_box(struct box *);
 
 
 
-int find_box_by_id(const  box* ,int ,int);
+int find_box_by_id(struct box* ,int ,int);
 /**
  * @brief find the box by unique_id
  * 

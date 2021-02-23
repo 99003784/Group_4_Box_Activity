@@ -1,8 +1,15 @@
-#include "box.h"
+
 
 #define SIZE 10
+#include "box.h"
 
 
+/**
+ * @brief takes the details of the box : unique ID,length,breadth,height,Colour,weight
+ * 
+ * @param  / arguments pointer to structure
+ * @return int (returns successful entering 10 box details)
+ */
 int enter_details(struct box *pb)
 {
     int i;
@@ -15,7 +22,12 @@ int enter_details(struct box *pb)
     return SUCCESS;
     
 }
-
+/**
+ * @brief displays the details of the box
+ * 
+ * @param /arguments pointer to structure
+ * @return pointer holding first box address
+ */
 struct box display(struct box *pb)
 {
     int i;
@@ -113,7 +125,7 @@ int remove_box(struct box *pb)
 
 // to find the box by unique_id
 
-int find_box_by_id(const box* parr,int len,int u_id)
+int find_box_by_id(const struct box* parr,int len,int u_id)
 {
  const box *ptr=parr;
 	for(int i=0;i<len;i++)
