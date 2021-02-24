@@ -170,3 +170,30 @@ float avg_vol(struct box *pb)
     avg = sum / SIZE ;
      return avg ;
 }
+
+	
+	/**
+ * @brief to find the difference between maximum and minimum volume
+ * 
+ * @param pointer pointing to first box
+ * 
+ * @return difference between maximum and minimum volume
+ * 
+ */
+
+int difference(struct box *pb)
+{
+    int max = 0,i,volume=0 ;
+    long min = 1000000 ;
+    for(i=0; i<SIZE ; i++)
+    {
+        volume=(pb[i].length)*(pb[i].breadth)*(pb[i].height);
+        
+        if(volume > max)
+            max = volume ;
+        if(volume < min)
+            min = volume ;
+    }
+    
+    return (max - min) ;
+}
