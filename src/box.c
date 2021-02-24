@@ -146,3 +146,27 @@ int find_box_by_id(const struct box* parr,int len,int u_id)
     return NULL;
 }   
 
+
+	
+	/**
+ * @brief to find the average volume of all the boxes
+ * 
+ * @param pointer pointing to first box
+ * 
+ * @return average volume
+ * 
+ */
+
+float avg_vol(struct box *pb)
+{
+    
+    int sum=0 , i;
+    float avg = ;
+    
+    for( i = 0 ; i < SIZE ; i++ )
+    {
+        sum + = (pb[i].length) * (pb[i].breadth) * (pb[i].height) ;
+    }
+    avg = sum / SIZE ;
+     return avg ;
+}
