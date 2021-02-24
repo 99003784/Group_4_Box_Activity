@@ -80,4 +80,10 @@ int find_box_by_id(struct box* ,int ,int);
  */
  float avg_vol(struct box *pb);
 
+/**
+ * @brief find the difference between maximum and minimum volume
+ *
+ */
+ int difference(struct box *pb)
+
 #endif //BOX__H
