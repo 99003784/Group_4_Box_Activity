@@ -129,7 +129,6 @@ int remove_box(struct box *pb)
 /**
  * @brief Find the box with given id
  * 
- * @param pb num Integer to find the box
  * @return int Success or Failure
  */
 
@@ -204,3 +203,28 @@ int difference(struct box *pb)
     
     return (max - min) ;
 }
+
+	/**
+ * @brief Count the boxes with specified colour
+ * 
+ * @return int Success or Failure
+ */
+	struct box count_box_colour(struct weather *pb)
+	{
+		char s1[25]="red";
+		int count =0;
+		for(int i=0;i<SIZE;i++)
+		{
+			if(strcmp(s1.pb[i].colour)==0)
+			{
+				count++;
+			}
+			else
+				i++;
+		}
+		if(count>0)
+			return SUCCESS
+		else
+   		        return ZERO
+	}			
+		
