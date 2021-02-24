@@ -68,11 +68,6 @@ int remove_box(struct box *);
 
 
 
-int find_box_by_id(struct box* ,int ,int);
-/**
- * @brief find the box by unique_id
- * 
- */
 
 /**
  * @brief find the average volume of all boxex
