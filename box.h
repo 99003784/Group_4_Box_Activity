@@ -74,4 +74,10 @@ int find_box_by_id(struct box* ,int ,int);
  * 
  */
 
+/**
+ * @brief find the average volume of all boxex
+ *
+ */
+ float avg_vol(struct box *pb);
+
 #endif //BOX__H
