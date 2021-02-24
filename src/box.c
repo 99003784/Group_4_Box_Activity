@@ -172,7 +172,7 @@ float avg_vol(struct box *pb)
 }
 
 	
-	/**
+/**
  * @brief to find the difference between maximum and minimum volume
  * 
  * @param pointer pointing to first box
