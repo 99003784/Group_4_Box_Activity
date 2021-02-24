@@ -85,5 +85,11 @@ int find_box_by_id(struct box* ,int ,int);
  *
  */
  int difference(struct box *pb)
+     
+/**
+ * @brief count the boxes of one specified colour
+ *
+ */     
+     struct box count_box_colour(struct weather *pb)
 
 #endif //BOX__H
