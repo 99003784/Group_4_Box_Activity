@@ -125,7 +125,14 @@ int remove_box(struct box *pb)
     
 }
 
-// to find the box by unique_id
+
+/**
+ * @brief Find the box with given id
+ * 
+ * @param pb num Integer to find the box
+ * @return int Success or Failure
+ */
+
 
 int find_box_by_id(const struct box* parr,int len,int u_id)
 {
