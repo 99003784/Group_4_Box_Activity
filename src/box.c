@@ -209,7 +209,7 @@ int difference(struct box *pb)
  * 
  * @return int Success or Failure
  */
-	struct box count_box_colour(struct weather *pb)
+	struct box count_box_colour(struct box *pb)
 	{
 		char s1[25]="red";
 		int count =0;
