@@ -1,7 +1,9 @@
 
 #include "unity.h"
 #include "box.h"
-
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 
 #define SUCCESS 1
 #define ZERO 0
@@ -43,7 +45,7 @@ void test_max_height(void)
 int main(void)
 {
 
-  struct box *pb = (struct box *)malloc(SIZE * sizeof(struct box));
+  struct box *p = (struct box *)malloc(SIZE * sizeof(struct box));
 /* Initiate the Unity Test Framework */
   UNITY_BEGIN();
   
@@ -52,6 +54,7 @@ int main(void)
   RUN_TEST(test_update_weight);
   RUN_TEST(test_remove_box);
  /* Close the Unity Test Framework */
+ free(p);
   return UNITY_END();
-  free(pb);
+  
 }

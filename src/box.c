@@ -1,7 +1,9 @@
-
-
-#define SIZE 10
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 #include "box.h"
+#define SIZE 10
+
 
 
 /**

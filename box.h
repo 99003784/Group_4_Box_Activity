@@ -11,14 +11,14 @@
 
 #ifndef  __BOX_H__
 #define  __BOX_H__
-
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 
 #define SUCCESS 1
 #define ZERO 0
 #define SIZE 10
-#include <stdlib.h>
-#include <stdio.h>
-#include <math.h>
+
 /**
  * @brief  structure of box having parameters:unique ID,length,breadth,height,colour,weight
  * 
