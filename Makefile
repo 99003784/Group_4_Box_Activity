@@ -1,22 +1,21 @@
 PROJECT_NAME = box
 
 
-SRC = text_box.c\
+SRC = test_box.c\
 src/box.c\
 unity/unity.c
 
 
 
 INC	= -Iinc\
--Iunity\
-
+-Iunity
 
 $(PROJECT_NAME).out: $(SRC)
-	gcc $^ -I $(INC) -o $@
+	gcc $^ $(INC) -o $@
 
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out 
 
 test: $(PROJECT_NAME).out
 	./$(PROJECT_NAME).out

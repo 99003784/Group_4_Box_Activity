@@ -1,6 +1,8 @@
 {
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
-        "box.h": "c"
+        "box.h": "c",
+        "unity.h": "c",
+        "unity_internals.h": "c"
     }
 }
